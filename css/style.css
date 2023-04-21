@@ -36,7 +36,7 @@ body {
   text-decoration: none;
 }
 .container {
-  min-width: 1158px;
+  width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -48,16 +48,21 @@ body {
 .header {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
 }
 .navbar {
   display: flex;
+  align-items: center;
   padding-right: auto;
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 23px;
 }
 .navbar-logo {
   font-family: 'Raleway', sans-serif;
-  padding-right: 70px;
+  margin-right: 76px;
   font-weight: 800;
   letter-spacing: 0.03em;
   font-size: 18px;
@@ -73,6 +78,7 @@ body {
   gap: 40px;
 }
 .navbar-link {
+  padding: 24px 0;
   display: block;
   font-weight: 500;
   font-size: 16px;
@@ -89,9 +95,10 @@ body {
 }
 .contact {
   font-style: normal;
-  display: flex;
 }
 .contact-list {
+  display: flex;
+  gap: 40px;
 }
 .contact-item-link {
   font-weight: 400;
@@ -111,14 +118,11 @@ body {
   |============================
 */
 .hero {
+  padding: 188px 0;
   background-color: var(--color-main);
 }
-.hero-wrapper {
-  padding-top: 188px;
-  padding-bottom: 188px;
-  align-items: center;
-}
 .hero-title {
+  max-width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -128,6 +132,10 @@ body {
   padding-bottom: 44px;
 }
 .hero-btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
   font-family: 'Roboto', sans-serif;
   background-color: var(--color-button);
   font-weight: 500;
@@ -136,14 +144,31 @@ body {
   letter-spacing: 0.04em;
   cursor: pointer;
   color: #fff;
+  border-radius: 4px;
+  margin: 0 auto;
 }
 .hero-btn:focus,
 .hero-btn:hover {
   background-color: #404bbf;
 }
 
-/* ABOUT */
+/**
+  |============================
+  | ABOUT
+  |============================
+*/
+.about {
+  padding: 120px 0;
+}
+.about-item {
+  width: calc((100% - 3 * 24px) / 4);
+}
+.about-list {
+  display: flex;
+  gap: 24px;
+}
 .about-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -158,8 +183,16 @@ body {
   color: var(--body-text);
 }
 
-/* SCOPE */
+/**
+  |============================
+  | SCOPE
+  |============================
+*/
+.scope {
+  padding-bottom: 120px;
+}
 .section-title {
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -167,6 +200,13 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-main);
+}
+.scope-list {
+  display: flex;
+  gap: 24px;
+}
+.scope-item {
+  width: calc((100%-16px * 3) / 3);
 }
 
 /* TEAM */
