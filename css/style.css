@@ -9,7 +9,18 @@
   --color-button: #4d5ae5;
 }
 *img {
+  display: block;
+  height: auto;
   max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 body {
   font-family: var(--font-primary);
@@ -18,14 +29,35 @@ body {
 }
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .link {
   text-decoration: none;
 }
-
-/* HEADER */
+.container {
+  min-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/**
+  |============================
+  | HEADER
+  |============================
+*/
+.header {
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  padding-right: auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .navbar-logo {
   font-family: 'Raleway', sans-serif;
+  padding-right: 70px;
   font-weight: 800;
   letter-spacing: 0.03em;
   font-size: 18px;
@@ -36,7 +68,12 @@ body {
 .header-span {
   color: var(--color-main);
 }
+.navbar-list {
+  display: flex;
+  gap: 40px;
+}
 .navbar-link {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -52,6 +89,9 @@ body {
 }
 .contact {
   font-style: normal;
+  display: flex;
+}
+.contact-list {
 }
 .contact-item-link {
   font-weight: 400;
@@ -65,9 +105,18 @@ body {
   color: #404bbf;
 }
 
-/* HERO */
+/**
+  |============================
+  | HERO
+  |============================
+*/
 .hero {
   background-color: var(--color-main);
+}
+.hero-wrapper {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  align-items: center;
 }
 .hero-title {
   font-weight: 700;
@@ -76,6 +125,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #fff;
+  padding-bottom: 44px;
 }
 .hero-btn {
   font-family: 'Roboto', sans-serif;
@@ -175,8 +225,25 @@ body {
   color: #fff;
   background-color: #404bbf;
 }
+.menu-btn-lisy {
+  display: flex;
+  grid-template: 24px;
+  padding-top: 96px;
+  padding-bottom: 72px;
+  justify-content: center;
+}
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  padding-bottom: 120px;
+}
 .menu-list .list {
   list-style: none;
+}
+.menu-inner-list {
+  width: calc((100%-48) / 3);
 }
 .menu-title {
   font-weight: 500;
