@@ -26,7 +26,6 @@ p {
 }
 img {
   display: block;
-  height: auto;
   max-width: 100%;
 }
 .list {
@@ -40,6 +39,16 @@ img {
 button {
   cursor: pointer;
 }
+.btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+}
+.title {
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -52,6 +61,9 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.section {
+  padding: 120px 0;
 }
 .container {
   width: 1158px;
@@ -151,19 +163,12 @@ button {
   padding-bottom: 44px;
 }
 .hero-btn {
-  display: block;
-  min-width: 169px;
   height: 56px;
   border: none;
-  font-family: 'Roboto', sans-serif;
   background-color: var(--color-button);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  cursor: pointer;
   color: #fff;
-  border-radius: 4px;
+  display: block;
+  min-width: 169px;
   margin: 0 auto;
 }
 .hero-btn:focus,
@@ -176,9 +181,6 @@ button {
   | ABOUT
   |============================
 */
-.about {
-  padding: 120px 0;
-}
 .about-item {
   width: calc((100% - 3 * 24px) / 4);
 }
@@ -207,9 +209,6 @@ button {
   | SCOPE
   |============================
 */
-.scope {
-  padding-bottom: 120px;
-}
 .section-title {
   margin-bottom: 72px;
   font-weight: 700;
@@ -234,7 +233,6 @@ button {
   |============================
 */
 .team {
-  padding: 120px 0;
   background-color: var(--color-bg);
 }
 .team-img {
@@ -313,19 +311,10 @@ button {
 }
 
 .menu-btn {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-
   color: var(--color-button);
   background-color: var(--color-bg);
-
   padding: 12px 24px;
   border: 1px solid #e7e9fc;
-  border-radius: 4px;
-  cursor: pointer;
 }
 .menu-btn:hover,
 .menu-btn:focus {
@@ -358,7 +347,6 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-main);
-
   margin-bottom: 8px;
 }
 .menu-desc {
