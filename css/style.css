@@ -303,27 +303,40 @@ button {
   color: var(--color-bg);
 }
 
-/* portfolio */
+/**
+  |============================
+  | PORTFOLIO
+  |============================
+*/
+.menu {
+  padding: 96px 0 120px;
+}
+
 .menu-btn {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+
   color: var(--color-button);
   background-color: var(--color-bg);
+
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
   cursor: pointer;
 }
 .menu-btn:hover,
 .menu-btn:focus {
   color: #fff;
   background-color: #404bbf;
+  border: 1px solid transparent;
 }
-.menu-btn-lisy {
+.menu-btn-list {
   display: flex;
-  grid-template: 24px;
-  padding-top: 96px;
-  padding-bottom: 72px;
+  gap: 24px;
+  margin-bottom: 72px;
   justify-content: center;
 }
 .menu-list {
@@ -345,10 +358,17 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-main);
+
+  margin-bottom: 8px;
 }
 .menu-desc {
   font-style: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--body-text);
+}
+.desc-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
