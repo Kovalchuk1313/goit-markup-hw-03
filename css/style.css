@@ -8,11 +8,13 @@
   --color-bg: #f4f4fd;
   --color-button: #4d5ae5;
 }
-img {
-  display: block;
-  height: auto;
-  max-width: 100%;
+body {
+  font-family: var(--font-primary);
+  background-color: #fff;
+  color: var(--body-text);
 }
+
+/* reset start */
 h1,
 h2,
 h3,
@@ -22,10 +24,10 @@ h6,
 p {
   margin: 0;
 }
-body {
-  font-family: var(--font-primary);
-  background-color: #fff;
-  color: var(--body-text);
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 .list {
   list-style: none;
@@ -34,6 +36,22 @@ body {
 }
 .link {
   text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .container {
   width: 1158px;
@@ -52,13 +70,14 @@ body {
 }
 .header-container {
   display: flex;
+  align-items: center;
 }
 .navbar {
   display: flex;
   align-items: center;
-  padding-right: auto;
   padding-top: 24px;
   padding-bottom: 23px;
+  margin-right: auto;
 }
 .navbar-logo {
   font-family: 'Raleway', sans-serif;
@@ -217,6 +236,9 @@ body {
 .team {
   padding: 120px 0;
   background-color: var(--color-bg);
+}
+.team-img {
+  overflow: hidden;
 }
 .team-item {
   background-color: #fff;
