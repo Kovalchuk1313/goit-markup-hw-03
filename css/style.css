@@ -47,7 +47,11 @@ button {
   letter-spacing: 0.04em;
   border-radius: 4px;
 }
-.title {
+.text {
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 0.02em;
 }
 .visually-hidden {
   position: absolute;
@@ -87,8 +91,6 @@ button {
 .navbar {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 23px;
   margin-right: auto;
 }
 .navbar-logo {
@@ -120,9 +122,6 @@ button {
 .navbar-link:focus,
 .navbar-link:hover {
   color: #404bbf;
-}
-.navbar-link:hover {
-  border-bottom: solid #404bbf;
 }
 .contact {
   font-style: normal;
@@ -157,10 +156,10 @@ button {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+  margin: 0 auto;
   letter-spacing: 0.02em;
   color: #fff;
-  padding-bottom: 44px;
+  margin-bottom: 44px;
 }
 .hero-btn {
   height: 56px;
@@ -197,10 +196,6 @@ button {
   color: var(--color-main);
 }
 .about-subtitle {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--body-text);
 }
 
@@ -269,10 +264,6 @@ button {
 }
 .team-text {
   text-align: center;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--body-text);
 }
 
@@ -336,7 +327,6 @@ button {
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
-  padding-bottom: 120px;
 }
 .menu-list .list {
   list-style: none;
